@@ -94,7 +94,26 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := olivewood
-	
+
+# Power
+TARGET_USES_INTERACTION_BOOST := true
+TARGET_TAP_TO_WAKE_NODE := "/dev/input/event1"
+
+# Props
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+
+# Qualcomm support
+BOARD_USES_QCOM_HARDWARE := true
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
+
+# RIL
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-01-01
 
