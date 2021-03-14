@@ -9,14 +9,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := xiaomi
-PRODUCT_DEVICE := olive
+PRODUCT_DEVICE := olivewood
 PRODUCT_MANUFACTURER := xiaomi
-PRODUCT_NAME := lineage_olive
-PRODUCT_MODEL := Redmi 8
+PRODUCT_NAME := lineage_olivewood
+PRODUCT_MODEL := Redmi 8A Dual
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR := xiaomi
-TARGET_VENDOR_PRODUCT_NAME := olive
+TARGET_VENDOR_PRODUCT_NAME := olivewood
 PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="olive-user 10 QKQ1.191014.001 V12.0.1.0.QCNINXM release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
