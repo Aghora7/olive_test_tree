@@ -249,4 +249,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
 
 # Inherit vendor
-$(call inherit-product, vendor/xiaomi/olive/olive-vendor.mk)
+$(call inherit-product, vendor/xiaomi/olivewood/olivewood-vendor.mk)
