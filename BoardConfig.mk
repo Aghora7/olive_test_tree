@@ -91,6 +91,9 @@ BUILD_WITHOUT_VENDOR := true
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware \
     /mnt/vendor/persist:/persist
+
+# OTA
+TARGET_OTA_ASSERT_DEVICE := olivewood
 	
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-01-01
