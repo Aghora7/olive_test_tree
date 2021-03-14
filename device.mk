@@ -1,3 +1,6 @@
+# Redmi 8A Dual is a product launched with pie aka MIUI10
+$(call inherit-product, build/make/target/product/product_launched_with_p.mk)
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
