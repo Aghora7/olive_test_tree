@@ -1,6 +1,14 @@
 # Redmi 8A Dual is a product launched with pie aka MIUI10
 $(call inherit-product, build/make/target/product/product_launched_with_p.mk)
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1520
+TARGET_SCREEN_WIDTH := 720
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
